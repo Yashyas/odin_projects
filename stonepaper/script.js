@@ -17,7 +17,7 @@ function computer_choice(){
 
 function round_result(computer,player){
     if(computer===player){
-        alert("Draw!")
+        ++draw;
     }
     else{
         if(computer=="rock"){
@@ -50,8 +50,9 @@ function round_result(computer,player){
 // final result
 
 function final_result(computer,player,draw){
+    alert("Computer wins:"+computer + " Player wins:" +player + " Draw:" + draw);
     if(computer > player){
-        alert("Computer wins the game!");
+        alert("Computer wins the game");
     }
     else if(computer < player){
         alert("Player wins the game!");
